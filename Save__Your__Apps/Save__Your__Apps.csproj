@@ -11,6 +11,8 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.5" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
+    <PackageReference Include="Npgsql" Version="6.0.4" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.4" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties dbconnect_1json__JsonSchema="https://json.schemastore.org/config.json" /></VisualStudio></ProjectExtensions>
