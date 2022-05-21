@@ -1,0 +1,7 @@
+{
+  "ConnectionStrings": {
+    "AppsDBConnection": "Host=127.0.0.1;Port=5432;Database=apps_db;Username=postgres;Password=12345;",
+    "EventsDBConnection": "Host=127.0.0.1;Port=5432;Database=events_db;Username=postgres;Password=12345;",
+    "UsersDBConnection": "Host=127.0.0.1;Port=5432;Database=users_db;Username=postgres;Password=12345;"
+
+  }
