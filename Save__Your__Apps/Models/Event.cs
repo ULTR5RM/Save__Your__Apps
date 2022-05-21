@@ -17,7 +17,7 @@
 
             public int App { get; set; } = -1; //приложение
             public int Id { get; set; } //айди
-            public EventType EventType { get; set; } //какой то тип 
+            public EventType EventType { get; set; } //получалка эвент
             public DateTime DateCreated { get; set; } = DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Utc);//дата
         
     }

@@ -29,3 +29,6 @@ C:\Save__Your__Apps\Save__Your__Apps\obj\Debug\net6.0\refint\Save__Your__Apps.dl
 C:\Save__Your__Apps\Save__Your__Apps\obj\Debug\net6.0\Save__Your__Apps.pdb
 C:\Save__Your__Apps\Save__Your__Apps\obj\Debug\net6.0\Save__Your__Apps.genruntimeconfig.cache
 C:\Save__Your__Apps\Save__Your__Apps\obj\Debug\net6.0\ref\Save__Your__Apps.dll
+C:\Save__Your__Apps\Save__Your__Apps\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Save__Your__Apps\Save__Your__Apps\bin\Debug\net6.0\Npgsql.dll
+C:\Save__Your__Apps\Save__Your__Apps\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
