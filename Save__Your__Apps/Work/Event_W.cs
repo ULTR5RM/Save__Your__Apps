@@ -30,61 +30,61 @@ namespace Save__Your__Apps.Work
                 }
                 return eventsList;
             }
-            //public static List<Event> GetEventList(string Identity, EventType ET)
-            //{
-            //    List<Event> eventsList = new List<Event>();
+        public static List<Event> GetEventList(string Identity, EventType ET)
+        {
+            List<Event> eventsList = new List<Event>();
 
-            //    int oid = App_W.IdentityToId(Identity);
+            int oid = App_W.IdentityToId(Identity);
 
-            //    using (Event_C db = new Event_C())
-            //    {
-            //        foreach (Event entry in db.Events.Where(b => b.App == oid).Where(b => b.EventType == ET))
-            //        {
-            //            eventsList.Add(entry);
-            //        }
-            //    }
-            //    return eventsList;
-            //}
-            //public static List<Event> GetEventList(string Identity, EventType ET, int days)
-            //{
-            //    if (days <= -1)
-            //    {
-            //        return GetEventList(Identity, ET);
-            //    }
+            using (Event_C db = new Event_C())
+            {
+                foreach (Event entry in db.Events.Where(b => b.App == oid).Where(b => b.EventType == ET))
+                {
+                    eventsList.Add(entry);
+                }
+            }
+            return eventsList;
+        }
+        //public static List<Event> GetEventList(string Identity, EventType ET, int days)
+        //{
+        //    if (days <= -1)
+        //    {
+        //        return GetEventList(Identity, ET);
+        //    }
 
-            //    List<Event> eventsList = new List<Event>();
+        //    List<Event> eventsList = new List<Event>();
 
-            //    int oid = App_W.IdentityToId(Identity);
+        //    int oid = App_W.IdentityToId(Identity);
 
-            //    using (Event_C db = new Event_C())
-            //    {
-            //        foreach (Event entry in db.Events.Where(b => b.App == oid).Where(b => b.EventType == ET).Where(b => b.DateCreated >= DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Utc).AddDays(-days)))
-            //        {
-            //            eventsList.Add(entry);
-            //        }
-            //    }
-            //    return eventsList;
-            //}
-            //public static List<Event> GetEventList(string Identity, int days)
-            //{
-            //    if (days <= -1)
-            //    {
-            //        return GetEventList(Identity);
-            //    }
+        //    using (Event_C db = new Event_C())
+        //    {
+        //        foreach (Event entry in db.Events.Where(b => b.App == oid).Where(b => b.EventType == ET).Where(b => b.DateCreated >= DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Utc).AddDays(-days)))
+        //        {
+        //            eventsList.Add(entry);
+        //        }
+        //    }
+        //    return eventsList;
+        //}
+        //public static List<Event> GetEventList(string Identity, int days)
+        //{
+        //    if (days <= -1)
+        //    {
+        //        return GetEventList(Identity);
+        //    }
 
-            //    List<Event> eventsList = new List<Event>();
+        //    List<Event> eventsList = new List<Event>();
 
-            //    int oid = App_W.IdentityToId(Identity);
+        //    int oid = App_W.IdentityToId(Identity);
 
-            //    using (Event_C db = new Event_C())
-            //    {
-            //        foreach (Event entry in db.Events.Where(b => b.App == oid).Where(b => b.DateCreated >= DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Utc).AddDays(-days)))
-            //        {
-            //            eventsList.Add(entry);
-            //        }
-            //    }
-            //    return eventsList;
-            //}
+        //    using (Event_C db = new Event_C())
+        //    {
+        //        foreach (Event entry in db.Events.Where(b => b.App == oid).Where(b => b.DateCreated >= DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Utc).AddDays(-days)))
+        //        {
+        //            eventsList.Add(entry);
+        //        }
+        //    }
+        //    return eventsList;
+        //}
 
     }
 }
