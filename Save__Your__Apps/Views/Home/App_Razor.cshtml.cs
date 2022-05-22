@@ -9,7 +9,7 @@ namespace Save__Your__Apps.Views.Home
     [Authorize]
     public class App_Razor : PageModel
     {
-        [Authorize]
+       
       
             [BindProperty]
             public List<App> UserAppList { get; set; }
